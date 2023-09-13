@@ -1,135 +1,368 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luke Tremble</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Luke Tremble</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
-
-<body>
-  <nav class="navbar bg-body-secondary navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="/Assets/cool.webp" alt="Photo of baby Luke Tremble wearing sunglasses" width="25" height="25" class="d-inline-block align-text-top">
-        Luke Tremble
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resume</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex"
-              id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
-              aria-label="Toggle theme (dark)">
-              <div class="bi my-1 theme-icon-active">
-                <i class="bi-moon-stars-fill "></i>
-              </div>
-              <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+  <body>
+    <nav class="navbar bg-body-secondary navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/Assets/cool.webp"
+            alt="Photo of baby Luke Tremble wearing sunglasses"
+            width="25"
+            height="25"
+            class="d-inline-block align-text-top"
+          />
+          Luke Tremble
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-label="Toggle theme (dark)"
+              >
+                <div class="bi my-1 theme-icon-active">
+                  <i class="bi-moon-stars-fill"></i>
+                </div>
+                <span class="d-lg-none ms-2" id="bd-theme-text"
+                  >Toggle theme</span
+                >
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="bd-theme-text"
+              >
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex"
+                    data-bs-theme-value="light"
+                    aria-pressed="false"
+                  >
+                    <div class="bi me-2 opacity-50 theme-icon">
+                      <i class="bi-sun-fill"></i>
+                    </div>
+                    Light
+                    <div class="bi ms-auto d-none">
+                      <i class="bi-check2"></i>
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex active"
+                    data-bs-theme-value="dark"
+                    aria-pressed="true"
+                  >
+                    <div class="bi me-2 opacity-50 theme-icon">
+                      <i class="bi-moon-stars-fill"></i>
+                    </div>
+                    Dark
+                    <div class="bi ms-auto d-none">
+                      <i class="bi-check2"></i>
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item d-flex"
+                    data-bs-theme-value="auto"
+                    aria-pressed="false"
+                  >
+                    <div class="bi me-2 opacity-50 theme-icon">
+                      <i class="bi-circle-half"></i>
+                    </div>
+                    Auto
+                    <div class="bi ms-auto d-none">
+                      <i class="bi-check2"></i>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-              <li>
-                <button type="button" class="dropdown-item d-flex " data-bs-theme-value="light"
-                  aria-pressed="false">
-                  <div class="bi me-2 opacity-50 theme-icon">
-                    <i class="bi-sun-fill "></i>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5 active" id="template">
+      <h1>My Co-Op Work Experiences</h1>
+      <div class="col-lg-9 px-0">
+        <p class="fs-5">
+          You have reached Luke Tremble's work term report. On this page you
+          will find information on my past work experiences and the projects I
+          undertook while working for these employers.
+        </p>
+        <p>
+          Feel free to download or copy-and-paste any parts of this example.
+        </p>
+
+        <hr class="col-1 my-4" />
+
+        <div class="accordion" id="workExperiences">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWorkExperiences"
+                aria-expanded="true"
+                aria-controls="collapseWorkExperiences"
+              >
+                OMAFRA (Ontario Ministry of Agriculture Food and Rural Affairs)
+                <span class="badge">May-August 2023</span>
+              </button>
+            </h2>
+            <div
+              id="collapseWorkExperiences"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#workExperiences"
+            >
+              <div class="accordion-body">
+                <h5>About my position at OMAFRA</h5>
+                At OMAFRA I worked under the PICS (Planning Information
+                Coordination Services) Unit also known as KMT (Knowledge
+                Management Team). In my role at PICS I was able to use my
+                software engineering background to bring a unique perspective to
+                the problems that need to be solved on a day to day basis in the
+                unit.
+                <hr />
+                <h5>Goals for this work term</h5>
+                <!-- Hover added -->
+                <div class="accordion" id="accordionExperiences">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        Better Documentation
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExperiences"
+                      style=""
+                    >
+                      <div class="accordion-body">first body</div>
+                    </div>
                   </div>
-                  Light
-                  <div class="bi ms-auto d-none">
-                    <i class="bi-check2 "></i>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Oral Communication
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExperiences"
+                      style=""
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
                   </div>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex  active" data-bs-theme-value="dark"
-                  aria-pressed="true">
-                  <div class="bi me-2 opacity-50 theme-icon">
-                    <i class="bi-moon-stars-fill "></i>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
+                        Learn Organizational tools and how to Automate them
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExperiences"
+                      style=""
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
                   </div>
-                  Dark
-                  <div class="bi ms-auto d-none">
-                    <i class="bi-check2 "></i>
-                  </div>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex" data-bs-theme-value="auto"
-                  aria-pressed="false">
-                  <div class="bi me-2 opacity-50 theme-icon">
-                    <i class="bi-circle-half "></i>
-                  </div>
-                  Auto
-                  <div class="bi ms-auto d-none">
-                    <i class="bi-check2 "></i>
-                  </div>
-                </button>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://getbootstrap.com" class="btn btn-primary"
+          >Read the Bootstrap docs</a
+        >
+        <a href="https://github.com/twbs/examples" class="btn btn-secondary"
+          >View on GitHub</a
+        >
       </div>
     </div>
-  </nav>
 
-  <div class="container my-5 active" id="template">
-    <h1>Hello, world!</h1>
-    <div class="col-lg-8 px-0">
-      <p class="fs-5">You've successfully loaded up the Bootstrap starter example. It includes <a
-          href="https://getbootstrap.com/">Bootstrap 5</a> via the <a
-          href="https://www.jsdelivr.com/package/npm/bootstrap">jsDelivr CDN</a> and includes an additional CSS and JS
-        file for your own code.</p>
-      <p>Feel free to download or copy-and-paste any parts of this example.</p>
+    <!-- <div class="container my-5" id="resume">
+      <span class="placeholder placeholder-lg bg-primary">
+        <h1>Resume placeholder</h1>
+      </span>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Co-Op Work Terms</h4>
+          <h6 class="card-subtitle text-body-secondary">OMAFRA (ontario Ministry Of Agriculture Food and Rural Affairs) - PICS (Planning Information Coordination Services)</h6>
+        </div>
+      </div>
+      <hr class="border border-primary">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Work Experiences</h4>
+              Work Experiences
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">LeoNovus Internship</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Education</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title"> Technical skills</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
-      <hr class="col-1 my-4">
-
-      <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-      <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
-    </div>
-  </div>
-
-  <div class="container my-5" id="resume">
-    <span class="placeholder placeholder-lg bg-primary">
-      <h1>Resume placeholder</h1>
-    </span>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
 </html>
